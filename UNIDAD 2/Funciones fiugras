@@ -1,0 +1,165 @@
+#include <stdio.h>
+#include <string.h>
+
+#define pi 3.1416
+
+typedef struct {
+    char tipo[10]; 
+} Operacion;
+
+int cuadrado(int l) {
+    return l * l;
+}
+
+int rectangulo(int b, int h) {
+    return b * h;
+}
+
+int triangulo(int b, int h) {
+    return (b * h) / 2;
+}
+
+float circulo(float r) {
+    return pi * r * r;
+}
+
+float rombo(int d1, int d2) {
+    return (d1 * d2) / 2.0;
+}
+
+float cubo(float l) {
+    return l * l * l;
+}
+
+float prisma(float a, float b, float c) {
+    return a * b * c;
+}
+
+float esfera(float r) {
+    return pi * r * r * r;
+}
+
+float cilindro(float r, float h) {
+    return pi * h * r * r;
+}
+
+float cono(float r, float h) {
+    return pi * r * r * h;
+}
+int main() {
+    
+    printf("1: AREA DE UN CUADRADO\n");
+    printf("2: AREA DE UN RECTANGULO\n");
+    printf("3: AREA DE UN TRIANGULO\n");
+    printf("4: AREA DE UN CIRCULO\n");
+    printf("5: AREA DE UN ROMBO \n");
+    printf("6: VOLUMEN DE UN CUBO\n");
+    printf("7: VOLUMEN DE UN PRISMA\n");
+    printf("8: VOLUMEN DE UNA ESFERA\n");
+    printf("9: VOLUMEN DE UN CILINDRO\n");
+    printf("10: VOLUMEN DE UN CONO\n");
+
+    int opcion;
+    scanf("%d", &opcion);
+
+ 
+    Operacion op;
+    if (opcion >= 1 && opcion <= 5) {
+        strcpy(op.tipo, "Área");
+    } else if (opcion >= 6 && opcion <= 10) {
+        strcpy(op.tipo, "Volumen");
+    } else {
+        printf("Opción no válida.\n");
+        return 1;
+    }
+
+    // Switch con todos los cases completos
+    switch(opcion) {
+        case 1: {
+            int l;
+            printf("Ingresa el lado del cuadrado: ");
+            scanf("%d", &l);
+            int resultado = cuadrado(l);
+            printf("%s del cuadrado: %d\n", op.tipo, resultado);
+            break;
+        }
+        case 2: {
+            int b, h;
+            printf("Ingresa la base y altura del rectángulo: ");
+            scanf("%d %d", &b, &h);
+            int resultado = rectangulo(b, h);
+            printf("%s del rectángulo: %d\n", op.tipo, resultado);
+            break;
+        }
+        case 3: {
+            int b, h;
+            printf("Ingresa la base y altura del triángulo: ");
+            scanf("%d %d", &b, &h);
+            int resultado = triangulo(b, h);
+            printf("%s del triángulo: %d\n", op.tipo, resultado);
+            break;
+        }
+        case 4: {
+            float r;
+            printf("Ingresa el radio del círculo: ");
+            scanf("%f", &r);
+            float resultado = circulo(r);
+            printf("%s del círculo: %.2f\n", op.tipo, resultado);
+            break;
+        }
+        case 5: {
+            int d1, d2;
+            printf("Ingresa las diagonales del rombo: ");
+            scanf("%d %d", &d1, &d2);
+            float resultado = rombo(d1, d2);
+            printf("%s del rombo: %.2f\n", op.tipo, resultado);
+            break;
+        }
+        case 6: {
+            float l;
+            printf("Ingresa el lado del cubo: ");
+            scanf("%f", &l);
+            float resultado = cubo(l);
+            printf("%s del cubo: %.2f\n", op.tipo, resultado);
+            break;
+        }
+        case 7: {
+            float a, b, c;
+            printf("Ingresa el ancho, largo y altura del prisma: ");
+            scanf("%f %f %f", &a, &b, &c);
+            float resultado = prisma(a, b, c);
+            printf("%s del prisma: %.2f\n", op.tipo, resultado);
+            break;
+        }
+        case 8: {
+            float r;
+            printf("Ingresa el radio de la esfera: ");
+            scanf("%f", &r);
+            float resultado = esfera(r);
+            printf("%s de la esfera: %.2f\n", op.tipo, resultado);
+            break;
+        }
+        case 9: {
+            float r, h;
+            printf("Ingresa el radio y altura del cilindro: ");
+            scanf("%f %f", &r, &h);
+            float resultado = cilindro(r, h);
+            printf("%s del cilindro: %.2f\n", op.tipo, resultado);
+            break;
+        }
+        case 10: {
+            float r, h;
+            printf("Ingresa el radio y altura del cono: ");
+            scanf("%f %f", &r, &h);
+            float resultado = cono(r, h);
+            printf("%s del cono: %.2f\n", op.tipo, resultado);
+            break;
+        }
+        default: {
+            printf("Opción no válida.\n");
+            break;
+        }
+    }
+
+    return 0;
+}

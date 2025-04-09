@@ -1,5 +1,10 @@
 {
     "files.associations": {
-        "estructura de arreglos.C": "cpp"
-    }
+        "estructura de arreglos.C": "cpp",
+        "APUNTADORES 2.C": "cpp",
+        "funciones fiugras": "cpp",
+        "stdio.h": "c",
+        "TEST.C": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }

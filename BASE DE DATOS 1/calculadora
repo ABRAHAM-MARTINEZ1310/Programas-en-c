@@ -1,0 +1,47 @@
+group: Empresa
+
+Departamento = {
+	codDepto:number, nombreDpto:string, ciudad:string
+	10, GERENCIA, OAXACA
+	15, PRODUCCION, OAXACA
+	20, VENTAS, OAXACA
+	21, VENTAS, PUEBLA
+	22, VENTAS, QUERETARO
+	23, VENTAS, GUADALAJARA
+	30, INVESTIGACION, OAXACA
+	35, MERCADEO, OAXACA
+	40, MANTENIMIENTO, OAXACA
+	41, MANTENIMIENTO, PUEBLA
+	42, MANTENIMIENTO, QUERETARO
+	43, MANTENIMIENTO, GUADALAJARA
+}
+
+Empleado = {
+	nDIEmp:number, nomEmp:string, sexEmp:string, fecNac:string, fecIncorporacion:string, salEmp:number, cargoE:string, codDepto:number
+	1, José Giraldo, M, 24/12/1939, 01/10/2000, 120000, Asesor, 35
+	2, Pedro Blanco, M, 30/08/1945, 16/05/1990, 80000, Vendedor, 20
+	3, Jesús Alfonso, M, 07/07/1947, 16/05/1990, 80000, Vendedor, 20
+	4, Julián Mora, M, 12/08/1955, 16/05/1998, 80000, Vendedor, 22
+	5, Manuel Millán, M, 25/02/1956, 01/01/2000, 80000, Vendedor, 23
+	6, Marcos Cortez, M, 15/03/1957, 16/08/1998, 255000, Mecánico, 40
+	7, Antonio Gil, M, 19/11/1957, 16/05/1990, 85000, Técnico, 15
+	8, Melissa Roa, F, 15/01/1959, 16/05/1990, 225000, Vendedor, 21
+	9, Irene Díaz, F, 05/04/1960, 01/11/1992, 105000, Mecánico, 42
+	10, Luis Pérez, M, 19/06/1960, 16/03/2001, 505000, Director, 15
+	11, Darío Casas, M, 11/05/1975, 16/07/2005, 450000, Investigador, 30
+	12, William Daza, M, 11/05/1975, 16/09/2001, 225000, Investigador, 30
+	13, Carla López, F, 28/09/1979, 01/06/2004, 450000, Jefe Mercadeo, 35
+	14, Carlos Rozo, M, 28/09/1979, 01/06/2004, 75000, Vigilante, 35
+	15, Diana Solarte, F, 01/10/1979, 16/05/1990, 125000, Secretaria, 10
+	16, Rosa Angulo, F, 23/01/1980, 16/04/2010, 325000, Jefe Ventas, 20
+	17, María Rojas, F, 09/10/1982, 16/12/1999, 625000, Gerente, 10
+	18, Elisa Rojas, F, 20/01/1985, 01/11/2000, 300000, Jefe Mecánicos, 40
+	19, Marisol Pulido, F, 23/06/1986, 16/04/2000, 325000, Investigador, 30
+	20, Ana Moreno, F, 28/10/1987, 01/10/2000, 120000, Secretaria, 30
+	21, Carolina Ríos, F, 14/03/1988, 01/10/2000, 125000, Secretaria, 15
+	22, Edith Muñoz, F, 03/07/1989, 01/10/2000, 80000, Vendedor, 21
+	23, Abel Gómez, M, 08/12/1990, 01/06/2004, 105000, Mecánico, 43
+	24, Mario Llano, M, 05/01/1992, 01/06/2004, 225000, Vendedor, 23
+	25, Joaquín Rosas, M, 15/02/1992, 01/10/2000, 225000, Vendedor, 22
+	26, Iván Duarte, M, 31/03/1992, 01/10/2000, 105000, Mecánico, 41
+}

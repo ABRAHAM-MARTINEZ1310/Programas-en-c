@@ -1,0 +1,6 @@
+
+APUNTADORES
+
+ * se utiliza el signo para asignar un apuntador y tambien para recuperar el valor que esta guaardando
+ & para asignar la poscion de memoria 
+ %P imprime una direeccion de memoria 
