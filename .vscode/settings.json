@@ -4,7 +4,8 @@
         "APUNTADORES 2.C": "cpp",
         "funciones fiugras": "cpp",
         "stdio.h": "c",
-        "TEST.C": "cpp"
+        "TEST.C": "cpp",
+        "MENU.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

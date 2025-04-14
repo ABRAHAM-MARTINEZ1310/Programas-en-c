@@ -5,4 +5,4 @@ int main () {
         printf("%d\n", arreglo[i]);
     }
     return 0;
- 
+}
