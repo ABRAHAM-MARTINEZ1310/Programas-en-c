@@ -5,7 +5,8 @@
         "funciones fiugras": "cpp",
         "stdio.h": "c",
         "TEST.C": "cpp",
-        "MENU.C": "cpp"
+        "MENU.C": "cpp",
+        "prueba.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
