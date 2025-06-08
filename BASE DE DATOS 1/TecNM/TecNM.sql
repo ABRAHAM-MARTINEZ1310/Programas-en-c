@@ -108,3 +108,38 @@ INSERT INTO Carreras_institucion (idInstitucion, idCarrera) VALUES
 (20, 13),
 (20, 17),
 (20, 19);
+
+--CONSULTAS
+
+--Mostrar el nombre del campus y el nombre del director que lo dirige.
+SELECT 
+  Institucion.Nombre_del_campus,
+  Director.Nombre AS Director
+FROM Institucion
+JOIN Director ON Institucion.Director_idDirector = Director.idDirector;
+
+
+-- Mostrar el nombre del campus y el nombre de una carrera que ofrece.
+SELECT 
+  Institucion.Nombre_del_campus,
+  Carreras_institucion.idCarrera
+FROM Institucion
+JOIN Carreras_institucion ON Institucion.idInstitucion = Carreras_institucion.idInstitucion;
+
+
+-- Mostrar todos los nombres de carreras disponibles.
+SELECT Nombre FROM Carrera;
+
+-- Mostrar el nombre del campus junto con sus coordenadas (latitud y longitud).
+SELECT 
+  Nombre_del_campus,
+  Ubicacion_latitud,
+  Ubicacion_longitud
+FROM Institucion;
+
+-- Mostrar todos los directores con su nombre, profesión y correo.
+SELECT 
+  Nombre,
+  Profesion,
+  Email
+FROM Director;
